@@ -1,7 +1,8 @@
+// CORE
 @import './core/variables.scss';
 @import './core/reset.scss';
-@import './components/links.scss';
 
+// LAYOUT 
 /* BODY STYLES  */
 @import 'layout/page.scss';
 
@@ -14,5 +15,9 @@
 /* FOOTER */
 @import 'layout/footer.scss';
 
+// COMPONENTS
+@import './components/links.scss';
+
+// PAGES
 /* INDEX */
 @import 'pages/index.scss';
