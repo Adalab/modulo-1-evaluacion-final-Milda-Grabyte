@@ -1,7 +1,18 @@
-@import 'core/variables';
-@import 'core/reset';
-@import 'components/links';
-@import 'layout/page';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'pages/index';
+@import './core/variables.scss';
+@import './core/reset.scss';
+@import './components/links.scss';
+
+/* BODY STYLES  */
+@import 'layout/page.scss';
+
+/* HEADER & HERO */
+@import 'layout/header.scss';
+
+/* MAIN SECTION */
+@import 'layout/main-section.scss';
+
+/* FOOTER */
+@import 'layout/footer.scss';
+
+/* INDEX */
+@import 'pages/index.scss';
