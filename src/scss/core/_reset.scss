@@ -2,4 +2,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: 1px solid green; //eliminar esta línea al terminar con la distribución
+}
+
+button {
+  background: none;
+  border: none;
 }
