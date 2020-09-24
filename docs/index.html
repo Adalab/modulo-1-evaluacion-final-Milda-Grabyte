@@ -3,43 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="name" content="Milda Grabyte">
+    <meta name="keywords" content="HTML, CSS, SCSS, Git">
     <title>Anonymous Proxy</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
   </head>
-
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+    <!-- HEADER & HERO -->
+    <header class="hero">
+      <button class="btn hero__btn--hamburger" type="button" name="Link to Adalab"><img src="pic_trulli.jpg" alt="Italian Trulli">
+      </button>
+      <div class="hero-heading">
+        <h1 class="hero-heading__title">
+          <span class="hero-heading__title--centered">Anonymous</span>
+          <span class="hero-heading__title--centered">Proxy</span>
+        </h1>
+        <p class="hero-heading__text">In hac habitasse platea dictumst.</p>
+      </div>
+      <button class="btn hero__btn--down-arrow" type="button" name="scroll down"></button>
+    </header>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-      </main>
-
-      <a class="link__adalab" href="https://adalab.es" target="_blank">Adalab</a>
-
-      <a class="link__github" href="https://github.com" target="_blank">GitHub</a>
-
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es" target="_blank">Adalab</a>
-
-        </small>
-      </footer>
-
-    </div>
-    <script src="./assets/js/main.js"></script>
+    <!-- MAIN -->
+    <main class="main-section">
+      <section class="upper-section">
+        <small class="upper-section__small">Insomnia Tips</small>
+        <h2 class="upper-section__title">Looking Through A Window</h2>
+        <p class="upper-section__text">Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus semper sodales rutrum.</p>
+        <button class="btn upper-section__btn--go" type="button" name="Go!">Go</button>
+      </section>
+      <section class="lower-section">
+        <h2 class="lower-section__title">3 Reasons To Purchase</h2>
+        <div class="lower-section-wrapper">
+          <div class="lower-section-wrapper-subsection">
+            <h3 class="lower-section-wrapper-subsection__title lower-section-wrapper-subsection__title--title-1">Ut sed metus</h3>
+            <p class="lower-section-wrapper-subsection__text lower-section-wrapper-subsection__text--text-1">Lorem ipsum dolor sit amet, consecteur.</p>
+          </div>
+          <div class="wrapper__section">
+            <h3 class="lower-section-wrapper-subsection__title lower-section-wrapper-subsection__title--title-2">Curabitur ac erat</h3>
+            <p class="lower-section-wrapper-subsection__text lower-section-wrapper-subsection__text--text-2">Mauris mattis urna quis lorem molestie.</p>
+          </div>
+          <div class="wrapper__section">
+            <h3 class="lower-section-wrapper-subsection__title lower-section-wrapper-subsection__title--title-3">Morbi dictum</h3>
+            <p class="lower-section-wrapper-subsection__text lower-section-wrapper-subsection__text--text-3">Aliquam in dolor et dolor tincidunt.</p>
+          </div>
+        </div>
+        <button class="btn lower-section__btn--more-reasons" type="button" name="Learn more">More reasons</button>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <button class="btn footer__btn--up-arrow" type="button" name="scroll up"></button>
+      <nav class="footer__nav">
+        <nav class="footer__nav footer__nav--1">
+          <ul class="footer__nav--list footer__nav--list-1">
+            <li class="footer__nav--item footer__nav--item-1">Articles</li>
+            <li class="footer__nav--item footer__nav--item-2">Books</li>
+            <li class="footer__nav--item footer__nav--item-3">Events</li>
+            <li class="footer__nav--item footer__nav--item-4">Reasons</li>
+            <li class="footer__nav--item footer__nav--item-5">Tips</li>
+          </ul>
+        </nav>
+        <nav class="footer__nav footer__nav--2">
+          <ul class="footer__nav--list footer__nav--list-2">
+            <li class="footer__nav--item footer__nav--item-6">Twitter</li>
+            <li class="footer__nav--item footer__nav--item-7">Instagram</li>
+            <li class="footer__nav--item footer__nav--item-8">Mastodon.Social</li>
+          </ul>
+        </nav>
+      </nav>
+      <small class="footer__small">
+        <span class="footer__small--copy">©2017</span>
+        <span class="footer__small--slogan">we <span class=footer__small--heart>&#10084;</span> components</span>
+      </small>  
+    </footer>
   </body>
 </html>
