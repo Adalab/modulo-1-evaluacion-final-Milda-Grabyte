@@ -1,8 +1,21 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+.footer {
+  position: relative;
+  background-color: #304268;
+  padding: 60px 15px 45px 15px;
+  @media all and (min-width: 768px) {
+    padding: 45px 40px;
+  }
+  &__btn--up-arrow{
+    position: absolute;
+    margin-top: -82.5px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px 0 var(--black-50);
+    background-color: #ffffff;
+  }
+  &__content{
+    display: flex;
+  }
 }
+

@@ -16,8 +16,10 @@
       height: 44px;
       background-color: #0271bc;
     }
+    &__btn--row {
+      z-index: 1;
+    }
     &__btn--down-arrow {
-      background-color: #CC212A;
       height: 45px;
       width: 45px;
       border-radius: 50%;
