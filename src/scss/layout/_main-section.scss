@@ -71,7 +71,7 @@
 .lower-section {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: auto auto auto;
   justify-items: center;
   background-color: #eff9ff;
   &__title {
@@ -87,29 +87,19 @@
     color: #000000;
     padding: 30px 0 45px 0;
   }
-  &__subsection-1 {
+  &__list-wrapper {
+    list-style: none;
     grid-row: 2 / 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 0 45px 0;
-  }
-  &__subsection-2 {
-    grid-row: 3 / 4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 0 45px 0;
-  }
-  &__subsection-3 {
-    grid-row: 4/ 5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 0 45px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    &--1, &--2, &--3 {
+      display: block;
+      padding: 0 0 45px 0;
+    }  
   }
   &__btn--more-reasons {
-    grid-row: 5 / 6;
+    grid-row: 3 / 4;
     width: 184px;
     height: 45px;
     border-radius: 22.5px;
@@ -127,7 +117,7 @@
   }
 }
 
-.subsection {
+.list-wrapper {
   &__title {
     font-family: "Roboto Slab";
     font-size: 18px;
