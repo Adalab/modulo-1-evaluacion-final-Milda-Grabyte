@@ -14,11 +14,7 @@
     <!-- HEADER & HERO -->
     <header class="hero">
       <button class="btn hero__btn--hamburger" type="button" name="Link to Adalab">
-        <div class="hero__btn--hamburger-rows">
-          <div class="hamburger__row"><img srcset="../images/ico-menu.svg"></div>
-          <div class="hamburger__row"><img srcset="../images/ico-menu.svg"></div>
-          <div class="hamburger__row"><img srcset="../images/ico-menu.svg"></div>
-        </div>
+          <div class="hero__btn--row"><img src="../images/ico-menu.svg" height="14" width="16"></div>
       </button>
       <div class="hero__heading">
         <h1 class="heading__title">
@@ -40,46 +36,50 @@
       </section>
       <section class="lower-section">
         <h2 class="lower-section__title">3 Reasons To Purchase</h2>
-          <div class="lower-section__subsection-1">
-            <h3 class="subsection__title subsection__title--title-1">Ut sed metus</h3>
-            <p class="subsection__text subsection__text--text-1">Lorem ipsum dolor sit amet, consecteur.</p>
-          </div>
-          <div class="lower-section__subsection-2">
-            <h3 class="subsection__title subsection__title--title-2">Curabitur ac erat</h3>
-            <p class="subsection__text subsection__text--text-2">Mauris mattis urna quis lorem molestie.</p>
-          </div>
-          <div class="lower-section__subsection-3">
-            <h3 class="subsection__title subsection__title--title-3">Morbi dictum</h3>
-            <p class="subsection__text subsection__text--text-3">Aliquam in dolor et dolor tincidunt.</p>
-          </div>
+        <ul class="lower-section__list-wrapper">
+          <li class="lower-section__list-wrapper--1">
+            <h3 class="list-wrapper__title">Ut sed metus</h3>
+            <p class="list-wrapper__text">Lorem ipsum dolor sit amet, consecteur.</p>
+          </li>
+          <li class="lower-section__list-wrapper--2">
+            <h3 class="list-wrapper__title">Curabitur ac erat</h3>
+            <p class="list-wrapper__text">Mauris mattis urna quis lorem molestie.</p>
+          </li>
+          <li class="lower-section__list-wrapper--3">
+            <h3 class="list-wrapper__title">Morbi dictum</h3>
+            <p class="list-wrapper__text">Aliquam in dolor et dolor tincidunt.</p>
+          </li>
+        </ul>
         <button class="btn lower-section__btn--more-reasons" type="button" name="Learn more">More reasons</button>
       </section>
     </main>
     <!-- FOOTER -->
     <footer class="footer">
       <button class="btn footer__btn--up-arrow" type="button" name="scroll up"></button>
-      <nav class="footer__nav">
-        <nav class="footer__nav footer__nav--1">
-          <ul class="footer__nav--list footer__nav--list-1">
-            <li class="footer__nav--item footer__nav--item-1">Articles</li>
-            <li class="footer__nav--item footer__nav--item-2">Books</li>
-            <li class="footer__nav--item footer__nav--item-3">Events</li>
-            <li class="footer__nav--item footer__nav--item-4">Reasons</li>
-            <li class="footer__nav--item footer__nav--item-5">Tips</li>
-          </ul>
+      <section class="footer__content"></section>
+        <nav class="footer__nav">
+          <nav class="footer__nav footer__nav--1">
+            <ul class="footer__nav--list footer__nav--list-1">
+              <li class="footer__nav--item footer__nav--item-1">Articles</li>
+              <li class="footer__nav--item footer__nav--item-2">Books</li>
+              <li class="footer__nav--item footer__nav--item-3">Events</li>
+              <li class="footer__nav--item footer__nav--item-4">Reasons</li>
+              <li class="footer__nav--item footer__nav--item-5">Tips</li>
+            </ul>
+          </nav>
+          <nav class="footer__nav footer__nav--2">
+            <ul class="footer__nav--list footer__nav--list-2">
+              <li class="footer__nav--item footer__nav--item-6">Twitter</li>
+              <li class="footer__nav--item footer__nav--item-7">Instagram</li>
+              <li class="footer__nav--item footer__nav--item-8">Mastodon.Social</li>
+            </ul>
+          </nav>
         </nav>
-        <nav class="footer__nav footer__nav--2">
-          <ul class="footer__nav--list footer__nav--list-2">
-            <li class="footer__nav--item footer__nav--item-6">Twitter</li>
-            <li class="footer__nav--item footer__nav--item-7">Instagram</li>
-            <li class="footer__nav--item footer__nav--item-8">Mastodon.Social</li>
-          </ul>
-        </nav>
-      </nav>
-      <small class="footer__small">
-        <span class="footer__small--copy">©2017</span>
-        <span class="footer__small--slogan">we <span class=footer__small--heart>&#10084;</span> components</span>
-      </small>  
+        <small class="footer__small">
+          <span class="footer__small--copy">©2017</span>
+          <span class="footer__small--slogan">we <span class=footer__small--heart>&#10084;</span> components</span>
+        </small> 
+      </section> 
     </footer>
   </body>
 </html>
