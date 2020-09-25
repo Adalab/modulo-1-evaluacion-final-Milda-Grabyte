@@ -1,11 +1,5 @@
 .main-section {
-  padding: 0 15px;
-  @media all and (min-width: 768px) {
-    padding: 0 35.7px;
-  }
-  @media all and (min-width: 768px) {
-    padding: 0 35.7px;
-  }
+  
 }
 
 .upper-section {
@@ -13,6 +7,10 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto;
   justify-items: start;
+  padding: 0 15px;
+  @media all and (min-width: 768px) {
+    padding: 0 35.7px;
+  }
   &__small {
     grid-row: 1 / 2;
     font-family: "Roboto";
@@ -74,6 +72,10 @@
   grid-template-rows: auto auto auto;
   justify-items: center;
   background-color: #eff9ff;
+  padding: 0 15px;
+  @media all and (min-width: 768px) {
+    padding: 0 35.7px;
+  }
   &__title {
     grid-row: 1 / 2;
     font-family: "Roboto Slab";
