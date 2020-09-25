@@ -13,16 +13,19 @@
   <body>
     <!-- HEADER & HERO -->
     <header class="hero">
-      <img class="hero__image" src="./assets/images/cover.jpg" alt="hero" />
       <button class="btn hero__btn--hamburger" type="button" name="Link to Adalab">
-        <!-- insertar hamburguesa -->
+        <div class="hero__btn--hamburger-rows">
+          <div class="hamburger__row"><img srcset="../images/ico-menu.svg"></div>
+          <div class="hamburger__row"><img srcset="../images/ico-menu.svg"></div>
+          <div class="hamburger__row"><img srcset="../images/ico-menu.svg"></div>
+        </div>
       </button>
-      <div class="hero-heading">
-        <h1 class="hero-heading__title">
-          <span class="hero-heading__title--centered">Anonymous</span>
-          <span class="hero-heading__title--centered">Proxy</span>
+      <div class="hero__heading">
+        <h1 class="heading__title">
+          <span class="heading__title--centered">Anonymous</span>
+          <span class="heading__title--centered">Proxy</span>
         </h1>
-        <p class="hero-heading__text">In hac habitasse platea dictumst.</p>
+        <p class="heading__text">In hac habitasse platea dictumst.</p>
       </div>
       <button class="btn hero__btn--down-arrow" type="button" name="scroll down"></button>
     </header>
@@ -37,20 +40,18 @@
       </section>
       <section class="lower-section">
         <h2 class="lower-section__title">3 Reasons To Purchase</h2>
-        <div class="lower-section-wrapper">
-          <div class="lower-section-wrapper-subsection">
-            <h3 class="lower-section-wrapper-subsection__title lower-section-wrapper-subsection__title--title-1">Ut sed metus</h3>
-            <p class="lower-section-wrapper-subsection__text lower-section-wrapper-subsection__text--text-1">Lorem ipsum dolor sit amet, consecteur.</p>
+          <div class="lower-section__subsection-1">
+            <h3 class="subsection__title subsection__title--title-1">Ut sed metus</h3>
+            <p class="subsection__text subsection__text--text-1">Lorem ipsum dolor sit amet, consecteur.</p>
           </div>
-          <div class="wrapper__section">
-            <h3 class="lower-section-wrapper-subsection__title lower-section-wrapper-subsection__title--title-2">Curabitur ac erat</h3>
-            <p class="lower-section-wrapper-subsection__text lower-section-wrapper-subsection__text--text-2">Mauris mattis urna quis lorem molestie.</p>
+          <div class="lower-section__subsection-2">
+            <h3 class="subsection__title subsection__title--title-2">Curabitur ac erat</h3>
+            <p class="subsection__text subsection__text--text-2">Mauris mattis urna quis lorem molestie.</p>
           </div>
-          <div class="wrapper__section">
-            <h3 class="lower-section-wrapper-subsection__title lower-section-wrapper-subsection__title--title-3">Morbi dictum</h3>
-            <p class="lower-section-wrapper-subsection__text lower-section-wrapper-subsection__text--text-3">Aliquam in dolor et dolor tincidunt.</p>
+          <div class="lower-section__subsection-3">
+            <h3 class="subsection__title subsection__title--title-3">Morbi dictum</h3>
+            <p class="subsection__text subsection__text--text-3">Aliquam in dolor et dolor tincidunt.</p>
           </div>
-        </div>
         <button class="btn lower-section__btn--more-reasons" type="button" name="Learn more">More reasons</button>
       </section>
     </main>
