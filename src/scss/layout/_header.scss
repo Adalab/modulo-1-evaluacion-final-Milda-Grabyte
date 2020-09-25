@@ -22,6 +22,9 @@
       border-radius: 50%;
       background-color: #FFFFFF;
       margin-bottom: 53px;
+      @media all and (min-width: 768px) {
+        margin-bottom: 45px;
+      }
     }
     &__btn--down-arrow-img {
       margin-top: 5px;
@@ -44,7 +47,11 @@
     letter-spacing: normal;
     text-align: center;
     padding-bottom: 10px;
+    @media all and (min-width: 768px) {
+      font-size: 80px;
+      padding-bottom: 20px;
     }
+  }
   &__text {
     font-family: "Roboto";
     font-size: 16px;
@@ -56,5 +63,9 @@
     text-align: center;
     color: #FFFFFF;
     padding-bottom: 45px;
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+      padding-bottom: 30px;
     }
-  } 
+  }
+} 
