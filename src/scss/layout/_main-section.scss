@@ -5,7 +5,7 @@
   justify-items: start;
   padding: 0 15px;
   @media all and (min-width: 768px) {
-    padding: 0 35.7px;
+    padding: 0 39px;
   }
   &__small {
     grid-row: 1 / 2;
@@ -30,6 +30,10 @@
     letter-spacing: normal;
     color: #000000;
     padding: 0 0 15px 0;
+    @media all and (min-width: 768px) {
+      font-size: 26px;
+      padding: 0 0 30px 0;
+    }
   }
   &__text {
     grid-row: 3 / 4;
@@ -42,6 +46,9 @@
     letter-spacing: normal;
     color: #4a4a4a;
     padding: 0 0 30px 0;
+    @media all and (min-width: 768px) {
+      font-size: 20px;
+    }
   }
   &__btn--go {
     grid-row: 4 / 5;
@@ -59,6 +66,11 @@
     text-align: center;
     color: #f26002;
     margin: 0 0 45px 0;
+    @media all and (min-width: 768px) {
+      font-size: 20px;
+      width: 91px;
+      margin: 0 0 60px 0;
+    }
   }
 }
 
@@ -70,7 +82,7 @@
   background-color: #eff9ff;
   padding: 0 15px;
   @media all and (min-width: 768px) {
-    padding: 0 35.7px;
+    padding: 0 39px;
   }
   &__title {
     grid-row: 1 / 2;
@@ -84,6 +96,10 @@
     text-align: center;
     color: #000000;
     padding: 30px 0 45px 0;
+    @media all and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 1.73;
+    }
   }
   &__list-wrapper {
     list-style: none;
@@ -91,9 +107,17 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
+    @media all and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      column-gap: 27.7px;
+    }
     &--1, &--2, &--3 {
       display: block;
       padding: 0 0 45px 0;
+      @media all and (min-width: 768px) {
+        padding: 0 0 60px 0;
+      }
     }  
   }
   &__btn--more-reasons {
@@ -112,6 +136,9 @@
     text-align: center;
     color: #eff9ff;
     margin: 0 0 60px 0;
+    @media all and (min-width: 768px) {
+      width: 210px;
+    }
   }
 }
 
@@ -126,6 +153,11 @@
     letter-spacing: normal;
     text-align: center;
     color: #000000;
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+      line-height: 1.25;
+      padding: 0 0 14px 0;
+    }
   }
   &__text {
     font-family: "Roboto";
@@ -137,5 +169,9 @@
     letter-spacing: normal;
     text-align: center;
     color: #000000;
+    @media all and (min-width: 768px) {
+      font-size: 20px;
+      line-height: 1.5;
+    }
   }
 }
