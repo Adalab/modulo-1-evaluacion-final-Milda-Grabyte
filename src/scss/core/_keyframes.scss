@@ -7,12 +7,7 @@
   }
 }
 
-@keyframes pump {
-	0%{
-	}
-	50%{
-    transform:scale(1.5) translate(17%, 17%);
-	}
-	100%{
-	}
+@keyframes fadein {
+    from { opacity: 0.2; }
+    to   { opacity: 1; }
 }

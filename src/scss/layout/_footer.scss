@@ -1,7 +1,7 @@
 .footer {
   position: relative;
-  background-color: $color-background-dark;
   padding: 60px 15px 45px 15px;
+  background-color: $color-background-dark;
   @include vertical-centered-flex;
   @include tablet {
     padding: 45px 39px;
@@ -39,13 +39,13 @@
     }
   }
   &__nav {
-    font-family: $font-main;
     font-size: 16px;
-    font-weight: 300;
     line-height: 1.88;
     text-align: center;
-    color: $color-white;
     text-transform: uppercase;
+    font-family: $font-main;
+    font-weight: $font-weight-light;
+    color: $color-white;
     @include font-parameters-normal;
     @include tablet {
       width: 210px;
@@ -61,22 +61,22 @@
     @include tablet {
       text-align: left;
       padding: 0;
-     }
+    }
   }
   &__small {
-    @include vertical-centered-flex;
-    font-family: $font-main;
     font-size: 14px;
-    font-weight: 300;
     line-height: 2.14;
     text-align: center;
+    font-family: $font-main;
+    font-weight: $font-weight-light;
     color: $color-white;
+    @include vertical-centered-flex;
     @include font-parameters-normal;
     @include tablet {
       order: -1;
       width: 210px;
       align-items: flex-start;
-     }
+    }
     &--heart {
       color: $color-secondary;
     }

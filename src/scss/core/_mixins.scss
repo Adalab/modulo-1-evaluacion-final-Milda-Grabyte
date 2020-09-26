@@ -22,11 +22,10 @@
   animation-timing-function: linear;
 }
 
-@mixin pump {
-  animation-name: pump;
-  animation-duration: 2s;
-  animation-iteration-count: 3;
-  animation-timing-function: ease-in-out;
+@mixin fade-in-effect {
+  animation-name: fadein;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in;
 }
 
 @mixin vertical-centered-flex {
