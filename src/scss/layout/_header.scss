@@ -31,8 +31,15 @@
     }
     &__btn--down-arrow-img {
       margin-top: 5px;
+      &:hover {
+        animation-name: spin;
+        animation-duration: 0.5s;
+        animation-iteration-count: once;
+        animation-timing-function: linear;
+      }
     }
-  }
+}
+
     
 .heading {
   &__title {

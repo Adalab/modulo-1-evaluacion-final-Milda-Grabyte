@@ -6,9 +6,11 @@
   padding: 0 15px;
   @media all and (min-width: 768px) {
     padding: 0 39px;
+    max-width: 768px;
   }
   @media all and (min-width: 1280px) {
-    padding: 0 275px;
+    max-width: 730px;
+    margin: 0 auto;
   }
   &__small {
     grid-row: 1 / 2;
