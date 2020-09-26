@@ -1,9 +1,7 @@
 .footer {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #304268;
+  @include vertical-centered-flex;
+  background-color: $color-background-dark;
   padding: 60px 15px 45px 15px;
   @media all and (min-width: 768px) {
     padding: 45px 39px;
@@ -18,24 +16,19 @@
       width: 45px;
       height: 45px;
       border-radius: 50%;
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-      background-color: #ffffff;
+      box-shadow: $shadow-dark-box;
+      background-color: $color-white;
       @media all and (min-width: 768px) {
         margin-top: -67.5px;
       }
     }
     &--up-arrow-img:hover {
-      animation-name: spin;
-      animation-duration: 0.5s;
-      animation-iteration-count: once;
-      animation-timing-function: linear;
+      @include arrow-animation;
     }
   }
   &__content {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include vertical-centered-flex;
     @media all and (min-width: 768px) {
       flex-direction: row;
       align-items: flex-start;
@@ -46,16 +39,14 @@
     }
   }
   &__nav {
-    font-family: "Roboto";
+    font-family: $font-main;
     font-size: 16px;
     font-weight: 300;
-    font-stretch: normal;
-    font-style: 300;
     line-height: 1.88;
-    letter-spacing: normal;
     text-align: center;
-    color: #ffffff;
+    color: $color-white;
     text-transform: uppercase;
+    @include font-parameters-normal;
     @media all and (min-width: 768px) {
       width: 210px;
     }
@@ -73,25 +64,21 @@
      }
   }
   &__small {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Roboto";
+    @include vertical-centered-flex;
+    font-family: $font-main;
     font-size: 14px;
     font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 2.14;
-    letter-spacing: normal;
     text-align: center;
-    color: #ffffff;
+    color: $color-white;
+    @include font-parameters-normal;
     @media all and (min-width: 768px) {
       order: -1;
       width: 210px;
       align-items: flex-start;
      }
     &--heart {
-      color: #f26002;
+      color: $color-secondary;
     }
   }
 }

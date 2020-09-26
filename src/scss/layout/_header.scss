@@ -1,62 +1,58 @@
 .hero {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: flex-end;
   background-image: url("../images/cover.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-    &__btn--hamburger {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 44px;
-      height: 44px;
-      background-color: #0271bc;
+  @include vertical-centered-flex;
+    &__btn {
+      &--hamburger {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 44px;
+        height: 44px;
+        background-color: $color-hamburger-icon;
+        &:focus {
+          box-shadow: $shadow-blue-box;
+        }
+      }
     }
     &__btn--down-arrow {
       height: 45px;
       width: 45px;
       border-radius: 50%;
-      background-color: #FFFFFF;
+      background-color: $color-white;
       margin-bottom: 53px;
       @media all and (min-width: 768px) {
         margin-bottom: 45px;
       }
-      @media all and (min-width: 768px) {
+      @media all and (min-width: 1280px) {
         margin-bottom: 13px;
       }
     }
     &__btn--down-arrow-img {
       margin-top: 5px;
       &:hover {
-        animation-name: spin;
-        animation-duration: 0.5s;
-        animation-iteration-count: once;
-        animation-timing-function: linear;
+        @include arrow-animation;
       }
     }
 }
-
-    
+  
 .heading {
   &__title {
-    display: flex;
-    flex-direction: column;
     text-transform: uppercase;
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-    color: #FFFFFF;
-    font-family: "Roboto Slab";
+    color: $color-white;
+    font-family: $font-heading;
     font-size: 42px;
     font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.31;
-    letter-spacing: normal;
     text-align: center;
     padding-bottom: 10px;
+    @include font-parameters-normal
+    @include vertical-centered-flex;
     @media all and (min-width: 768px) {
       font-size: 80px;
       padding-bottom: 20px;
@@ -65,20 +61,17 @@
       font-size: 100px;
       padding-bottom: 0;
       line-height: 1.32;
-      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      text-shadow: $shadow-dark-text;
     }
   }
   &__text {
-    font-family: "Roboto";
+    font-family: $font-main;
     font-size: 16px;
     font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: center;
-    color: #FFFFFF;
+    color: $color-white;
     padding-bottom: 45px;
+    @include font-parameters-normal;
     @media all and (min-width: 768px) {
       font-size: 24px;
       padding-bottom: 30px;

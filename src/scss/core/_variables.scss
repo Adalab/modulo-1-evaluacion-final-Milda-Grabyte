@@ -1,6 +1,16 @@
 // fonts
 $font-main: "Roboto", sans-serif;
+$font-heading: "Roboto Slab", sans-serif;
 
 // colors
-$color-white: #f3f4f5;
-$color-secondary: #999;
+$color-white: #ffffff;
+$color-primary: #000000;
+$color-secondary: #f26002;
+$color-background-dark: #304268;
+$color-hamburger-icon: #0271bc;
+
+// effects
+$shadow-dark-box: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+$shadow-dark-text: 0 2px 5px rgba(0, 0, 0, 0.5);
+$shadow-blue-box: 5px 10px 15px #004878 inset;
+

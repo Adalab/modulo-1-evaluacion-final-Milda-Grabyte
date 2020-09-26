@@ -14,15 +14,13 @@
   }
   &__small {
     grid-row: 1 / 2;
-    font-family: "Roboto";
+    font-family: $font-main;
     font-size: 14px;
     font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 2.14;
-    letter-spacing: normal;
     color: #8ccbea;
     padding: 30px 0 0 0;
+    @include font-parameters-normal;
     @media all and (min-width: 1280px) {
       font-size: 16px;
       line-height: 1.88;
@@ -31,15 +29,13 @@
   }
   &__title {
     grid-row: 2 / 3;
-    font-family: "Roboto Slab";
+    font-family: $font-heading;
     font-size: 24px;
     font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.25;
-    letter-spacing: normal;
-    color: #000000;
+    color: $color-secondary;
     padding: 0 0 15px 0;
+    @include font-parameters-normal;
     @media all and (min-width: 768px) {
       font-size: 26px;
       padding: 0 0 30px 0;
@@ -51,15 +47,13 @@
   }
   &__text {
     grid-row: 3 / 4;
-    font-family: "Roboto";
+    font-family: $font-main;
     font-size: 18px;
     font-weight: 400;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.67;
-    letter-spacing: normal;
     color: #4a4a4a;
     padding: 0 0 30px 0;
+    @include font-parameters-normal;
     @media all and (min-width: 768px) {
       font-size: 20px;
     }
@@ -72,17 +66,16 @@
     width: 76px;
     height: 45px;
     border-radius: 22.5px;
-    border: solid 2px #f26002;
-    font-family: "Roboto";
+    border: solid 2px $color-secondary;
+    font-family: $font-main;
     font-size: 20px;
     font-weight: 400;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2.25;
-    letter-spacing: normal;
     text-align: center;
-    color: #f26002;
+    color: $color-secondary;
+    background-color: $color-white;
     margin: 0 0 45px 0;
+    transition: background-color 0.5s ease;
+    @include font-parameters-normal;
     @media all and (min-width: 768px) {
       width: 91px;
       margin: 0 0 60px 0;
@@ -108,16 +101,14 @@
   }
   &__title {
     grid-row: 1 / 2;
-    font-family: "Roboto Slab";
+    font-family: $font-heading;
     font-size: 24px;
     font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.25;
-    letter-spacing: normal;
     text-align: center;
-    color: #000000;
+    color: $color-primary;
     padding: 30px 0 45px 0;
+    @include font-parameters-normal;
     @media all and (min-width: 768px) {
       font-size: 26px;
       line-height: 1.73;
@@ -152,17 +143,16 @@
     width: 184px;
     height: 45px;
     border-radius: 22.5px;
-    background-color: #f26002;
-    font-family: "Roboto";
+    background-color: $color-secondary;
+    border: solid 2px $color-secondary;
+    font-family: $font-main;
     font-size: 20px;
     font-weight: 400;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2.25;
-    letter-spacing: normal;
     text-align: center;
-    color: #eff9ff;
+    color: $color-white;
     margin: 0 0 60px 0;
+    transition: background-color 0.5s ease;
+    @include font-parameters-normal;
     @media all and (min-width: 768px) {
       width: 210px;
     }
@@ -174,15 +164,13 @@
 
 .list-wrapper {
   &__title {
-    font-family: "Roboto Slab";
+    font-family: $font-main;
     font-size: 18px;
     font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.67;
-    letter-spacing: normal;
     text-align: center;
-    color: #000000;
+    color: $color-primary;
+    @include font-parameters-normal;
     @media all and (min-width: 768px) {
       font-size: 24px;
       line-height: 1.25;
@@ -190,15 +178,13 @@
     }
   }
   &__text {
-    font-family: "Roboto";
+    font-family: $font-main;
     font-size: 18px;
     font-weight: 400;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.67;
-    letter-spacing: normal;
     text-align: center;
-    color: #000000;
+    color: $color-primary;
+    @include font-parameters-normal;
     @media all and (min-width: 768px) {
       font-size: 20px;
       line-height: 1.5;

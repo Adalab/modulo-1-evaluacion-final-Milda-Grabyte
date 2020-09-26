@@ -1,0 +1,30 @@
+// @mixin button-color-change(background-color: true) {
+//   @if background-color: $color-secondary {
+//     transition: background-color 0.5s ease;
+//     background-color: $color-white;
+//     color: $color-secondary;
+//   } @else {
+//     transition: background-color 0.5s ease;
+//     background-color: $color-secondary;
+//     color: $color-white;
+//   }
+// }
+
+@mixin font-parameters-normal {
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+@mixin arrow-animation {
+  animation-name: spin;
+  animation-duration: 0.5s;
+  animation-iteration-count: once;
+  animation-timing-function: linear;
+}
+
+@mixin vertical-centered-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
