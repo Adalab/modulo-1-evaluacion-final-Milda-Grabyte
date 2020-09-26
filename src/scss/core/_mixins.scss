@@ -1,10 +1,11 @@
-@mixin button-color-change($color-secondary: true) {
-  @if $color-secondary {
-    background-color: $color-white;
-    color: $color-secondary;
-  } @else {
-    background-color: $color-secondary;
-    color: $color-white;
+@mixin tablet {
+  @media all and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media all and (min-width: 1280px) {
+    @content;
   }
 }
 
@@ -19,6 +20,13 @@
   animation-duration: 0.5s;
   animation-iteration-count: once;
   animation-timing-function: linear;
+}
+
+@mixin pump {
+  animation-name: pump;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-in-out;
 }
 
 @mixin vertical-centered-flex {

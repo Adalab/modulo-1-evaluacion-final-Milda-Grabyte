@@ -2,9 +2,7 @@
   height: 100vh;
   justify-content: flex-end;
   background-image: url("../images/cover.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include hero-cover;
   @include vertical-centered-flex;
     &__btn {
       &--hamburger {
@@ -15,8 +13,10 @@
         height: 44px;
         background-color: $color-hamburger-icon;
         &:focus {
-          box-shadow: $shadow-blue-box;
+          @include pump;
         }
+      }
+      &--link {
       }
     }
     &__btn--down-arrow {
@@ -25,10 +25,10 @@
       border-radius: 50%;
       background-color: $color-white;
       margin-bottom: 53px;
-      @media all and (min-width: 768px) {
+      @include tablet {
         margin-bottom: 45px;
       }
-      @media all and (min-width: 1280px) {
+      @include desktop {
         margin-bottom: 13px;
       }
     }
@@ -43,23 +43,23 @@
 .heading {
   &__title {
     text-transform: uppercase;
-    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    text-shadow: $shadow-dark-heading;
     color: $color-white;
     font-family: $font-heading;
     font-size: 42px;
     font-weight: 600;
     line-height: 1.31;
     text-align: center;
-    padding-bottom: 10px;
-    @include font-parameters-normal
+    padding: 0 0 10 0px;
+    @include font-parameters-normal;
     @include vertical-centered-flex;
-    @media all and (min-width: 768px) {
+    @include tablet {
       font-size: 80px;
-      padding-bottom: 20px;
+      padding: 0 0 20px 0;
     }
-    @media all and (min-width: 1280px) {
+    @include desktop {
       font-size: 100px;
-      padding-bottom: 0;
+      padding: 0;
       line-height: 1.32;
       text-shadow: $shadow-dark-text;
     }
@@ -72,7 +72,7 @@
     color: $color-white;
     padding-bottom: 45px;
     @include font-parameters-normal;
-    @media all and (min-width: 768px) {
+    @include tablet {
       font-size: 24px;
       padding-bottom: 30px;
     }

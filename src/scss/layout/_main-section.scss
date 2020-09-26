@@ -4,11 +4,11 @@
   grid-template-rows: auto auto auto auto;
   justify-items: start;
   padding: 0 15px;
-  @media all and (min-width: 768px) {
+  @include tablet {
     padding: 0 39px;
     max-width: 768px;
   }
-  @media all and (min-width: 1280px) {
+  @include desktop {
     max-width: 730px;
     margin: 0 auto;
   }
@@ -18,10 +18,10 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 2.14;
-    color: #8ccbea;
+    color: $color-tertiary;
     padding: 30px 0 0 0;
     @include font-parameters-normal;
-    @media all and (min-width: 1280px) {
+    @include desktop {
       font-size: 16px;
       line-height: 1.88;
       padding: 60px 0 0 0;
@@ -36,11 +36,11 @@
     color: $color-secondary;
     padding: 0 0 15px 0;
     @include font-parameters-normal;
-    @media all and (min-width: 768px) {
+    @include tablet {
       font-size: 26px;
       padding: 0 0 30px 0;
     }
-    @media all and (min-width: 1280px) {
+    @include desktop {
       font-size: 32px;
       line-height: 1.41;
     }
@@ -51,13 +51,13 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 1.67;
-    color: #4a4a4a;
+    color: $color-secondary-light;
     padding: 0 0 30px 0;
     @include font-parameters-normal;
-    @media all and (min-width: 768px) {
+    @include tablet {
       font-size: 20px;
     }
-    @media all and (min-width: 1280px) {
+    @include desktop {
       line-height: 1.5;
     }
   }
@@ -76,12 +76,16 @@
     margin: 0 0 45px 0;
     transition: background-color 0.5s ease;
     @include font-parameters-normal;
-    @media all and (min-width: 768px) {
+    @include tablet {
       width: 91px;
       margin: 0 0 60px 0;
     }
-    @media all and (min-width: 1280px) {
+    @include desktop {
       width: 160px;
+    }
+    &:hover {
+      background-color: $color-secondary;
+      color: $color-white;
     }
   }
 }
@@ -91,33 +95,33 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
   justify-items: center;
-  background-color: #eff9ff;
+  background-color: $color-background-light;
   padding: 0 15px;
-  @media all and (min-width: 768px) {
+  @include tablet {
     padding: 0 39px;
   }
-  @media all and (min-width: 1280px) {
+  @include desktop {
     padding: 0 85px;
   }
   &__title {
     grid-row: 1 / 2;
     font-family: $font-heading;
+    color: $color-primary;
     font-size: 24px;
     font-weight: 600;
     line-height: 1.25;
     text-align: center;
-    color: $color-primary;
     padding: 30px 0 45px 0;
     @include font-parameters-normal;
-    @media all and (min-width: 768px) {
+    @include tablet {
       font-size: 26px;
       line-height: 1.73;
     }
-    @media all and (min-width: 1280px) {
+    @include desktop {
       font-size: 32px;
       line-height: 1.41;
       padding: 60px 275px 45px 275px;
-  }
+    }
   }
   &__list-wrapper {
     list-style: none;
@@ -125,7 +129,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    @media all and (min-width: 768px) {
+    @include tablet {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: auto;
       column-gap: 27.7px;
@@ -133,7 +137,7 @@
     &--1, &--2, &--3 {
       display: block;
       padding: 0 0 45px 0;
-      @media all and (min-width: 768px) {
+      @include tablet {
         padding: 0 0 60px 0;
       }
     }  
@@ -151,13 +155,17 @@
     text-align: center;
     color: $color-white;
     margin: 0 0 60px 0;
-    transition: background-color 0.5s ease;
+    transition: all 0.5s ease;
     @include font-parameters-normal;
-    @media all and (min-width: 768px) {
+    @include tablet {
       width: 210px;
     }
-    @media all and (min-width: 1280px) {
+    @include desktop {
       width: 255px;
+    }
+    &:hover {
+      background-color: $color-white;
+      color: $color-secondary;
     }
   }
 }
@@ -171,7 +179,7 @@
     text-align: center;
     color: $color-primary;
     @include font-parameters-normal;
-    @media all and (min-width: 768px) {
+    @include tablet {
       font-size: 24px;
       line-height: 1.25;
       padding: 0 0 14px 0;
@@ -185,12 +193,12 @@
     text-align: center;
     color: $color-primary;
     @include font-parameters-normal;
-    @media all and (min-width: 768px) {
+    @include tablet {
       font-size: 20px;
       line-height: 1.5;
       max-width: 212px;
     }
-    @media all and (min-width: 768px) {
+    @include desktop {
       max-width: 353px;
     }
   }

@@ -1,12 +1,12 @@
 .footer {
   position: relative;
-  @include vertical-centered-flex;
   background-color: $color-background-dark;
   padding: 60px 15px 45px 15px;
-  @media all and (min-width: 768px) {
+  @include vertical-centered-flex;
+  @include tablet {
     padding: 45px 39px;
   }
-  @media all and (min-width: 1280px) {
+  @include desktop {
     padding: 45px 0;
   }
   &__btn {
@@ -18,7 +18,7 @@
       border-radius: 50%;
       box-shadow: $shadow-dark-box;
       background-color: $color-white;
-      @media all and (min-width: 768px) {
+      @include tablet {
         margin-top: -67.5px;
       }
     }
@@ -29,12 +29,12 @@
   &__content {
     width: 100%;
     @include vertical-centered-flex;
-    @media all and (min-width: 768px) {
+    @include tablet {
       flex-direction: row;
       align-items: flex-start;
       justify-content: space-between;
     }
-    @media all and (min-width: 1280px) {
+    @include desktop {
       justify-content: center;
     }
   }
@@ -47,10 +47,10 @@
     color: $color-white;
     text-transform: uppercase;
     @include font-parameters-normal;
-    @media all and (min-width: 768px) {
+    @include tablet {
       width: 210px;
     }
-     @media all and (min-width: 1280px) {
+    @include desktop {
       width: 159px;
     }
   }
@@ -58,7 +58,7 @@
     list-style-type: none;
     padding: 0 0 30px 0;
     text-align: center;
-    @media all and (min-width: 768px) {
+    @include tablet {
       text-align: left;
       padding: 0;
      }
@@ -72,7 +72,7 @@
     text-align: center;
     color: $color-white;
     @include font-parameters-normal;
-    @media all and (min-width: 768px) {
+    @include tablet {
       order: -1;
       width: 210px;
       align-items: flex-start;
