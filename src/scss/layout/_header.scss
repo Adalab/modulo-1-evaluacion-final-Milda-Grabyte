@@ -4,40 +4,44 @@
   background-image: url("../images/cover.jpg");
   @include hero-cover;
   @include vertical-centered-flex;
-    &__btn {
-      &--hamburger {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 44px;
-        height: 44px;
-        background-color: $color-hamburger-icon;
-        &:focus {
-          @include pump;
-        }
-      }
-      &--link {
-      }
-    }
-    &__btn--down-arrow {
-      height: 45px;
-      width: 45px;
-      border-radius: 50%;
-      background-color: $color-white;
-      margin-bottom: 53px;
-      @include tablet {
-        margin-bottom: 45px;
-      }
-      @include desktop {
-        margin-bottom: 13px;
+  &__btn {
+    &--hamburger {
+      position: fixed;
+      @include vertical-centered-flex;
+      justify-content: center;
+      top: 0;
+      left: 0;
+      width: 44px;
+      height: 44px;
+      background-color: $color-hamburger-icon;
+      &:active {
+        border: 1px solid $color-secondary;
       }
     }
-    &__btn--down-arrow-img {
-      margin-top: 5px;
-      &:hover {
-        @include arrow-animation;
-      }
+    &--row {
+      display: block;
+      padding: 12px;
     }
+  }
+  &__btn--down-arrow {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: $color-white;
+    margin-bottom: 53px;
+    @include tablet {
+      margin-bottom: 45px;
+    }
+    @include desktop {
+      margin-bottom: 13px;
+    }
+  }
+  &__btn--down-arrow-img {
+    margin-top: 5px;
+    &:hover {
+      @include arrow-animation;
+    }
+  }
 }
   
 .heading {
@@ -47,12 +51,13 @@
     color: $color-white;
     font-family: $font-heading;
     font-size: 42px;
-    font-weight: 600;
+    font-weight: $font-weight-heavy;
     line-height: 1.31;
     text-align: center;
     padding: 0 0 10 0px;
     @include font-parameters-normal;
     @include vertical-centered-flex;
+    @include fade-in-effect;
     @include tablet {
       font-size: 80px;
       padding: 0 0 20px 0;
@@ -67,7 +72,7 @@
   &__text {
     font-family: $font-main;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: $font-weight-light;
     text-align: center;
     color: $color-white;
     padding-bottom: 45px;
