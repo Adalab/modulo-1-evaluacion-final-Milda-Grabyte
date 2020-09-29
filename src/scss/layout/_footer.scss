@@ -11,6 +11,7 @@
   }
   &__btn {
     &--up-arrow {
+      display: none;
       position: absolute;
       margin-top: -82.5px;
       width: 45px;
@@ -19,6 +20,7 @@
       box-shadow: $shadow-dark-box;
       background-color: $color-white;
       @include tablet {
+        display: block;
         margin-top: -67.5px;
       }
     }
